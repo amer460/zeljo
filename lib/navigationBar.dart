@@ -32,11 +32,11 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   static const TextStyle optionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
   static List<Widget> _widgetOptions = <Widget>[
+    MenuScreen(),
     Text(
       'Index 0: Korpa',
       style: optionStyle,
     ),
-    MenuScreen(),
     CheckOutScreen(),
     OrderPage(),
   ];
@@ -62,7 +62,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               Icons.home,
               color: Colors.grey,
             ),
-            label: 'Korpa',
+            label: 'Naruči sad',
           ),
           BottomNavigationBarItem(
             icon: Icon(
@@ -76,7 +76,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
               Icons.shopping_cart,
               color: Colors.grey,
             ),
-            label: 'Naruči sad',
+            label: 'Korpa',
           ),
           BottomNavigationBarItem(
             icon: Icon(
